@@ -146,5 +146,108 @@ Sathish Balakrishna		65.0.203.104		m?%MvKX;Hzg=CJ2dyX@hG*HupLKt.hW-
 John Christopher		13.234.186.116		uy=Mx3M*RhotX=5D!vP-qa45xGTyD%.L
 Vishal Eswar			13.235.0.169		WKdGO58TZl..ABZNxASh9t@2Ti4rtmzY
 
-Step 3 - Monitor through Datadog dashboard.
+================================================================
+PHYSCAL MACHINE  --> Virtual Machine --> Container
 
+What is Docker? and Container?
+https://www.devopsschool.com/videos/show/docker+?type=video
+=========================================
+What is Vmware
+	--Managing VMs (Create + Start + Stop + Pause + Unpause + Kill + Remove)
+What is Docker
+	--Managing Container (Create + Start + Stop + Pause + Unpause + Kill + Remove)
+
+What is Container?
+==========================
+	RUN YOUR APPs
+	ie. ubuntu, centos, fedora, jira, jenkins, sonarqube, java, php
+
+	IS not having OS.
+	
+	Container is YOU(USER). BUT you are shared cOntainer.
+		Container from Docker gets their own....
+				- Network
+				- mount
+				- PID
+-----------------------
+How to create a container?
+Step - 1 - Install Docker Engine (https://www.devopsschool.com/tutorial/docker/install-config/docker-install-commuityedition-centos-rhel.html) and Section called "How to install Docker Community Edition via YUM?"
+
+Step 2 - 
+usermod -a -G docker dd-agent
+
+Step 3 - Configure the Agent to connect to Docker
+
+  20  cd /etc/datadog-agent/
+   25  pwd
+   26  ls
+   27  cd conf.d
+   28  clear
+   29  ls
+   30  clear
+   31  ls
+   32  clear
+   33  cd docker.d/
+   34  ls
+   35  pwd
+   36  more conf.yaml.example
+   37  more conf.yaml.exampleclear
+   38  clear
+   39  ls
+   40  vi conf.yaml.example
+   41  ls
+   42  cp conf.yaml.example conf.yaml
+   43  ls
+   44  clear
+   45  ls
+   46  clear
+   47  ls
+   48  sudo systemctl stop datadog-agent
+   49  sudo systemctl start datadog-agent
+   50  sudo datadog-agent help
+   51  clear
+   52  sudo datadog-agent check
+   53  sudo datadog-agent check docker
+   54  clear
+   55  sudo datadog-agent help
+   56  clear
+   57  sudo datadog-agent configcheck
+   58  clear
+   59  ls
+   60  vo conf.yaml
+   61  vi conf.yaml
+   62  clear
+   63  sudo systemctl stop datadog-agent
+   64  sudo systemctl start datadog-agent
+   65  ps -eaf | grep data
+   66  sudo datadog-agent configcheck
+
+
+
+
+Step - 4 - Download "Docker Image" From Registry (hub.docker.com)
+Step - 5 - RUN "docker image" with docker...You get container.
+$ docker run -itd ubuntu
+$ docker run -itd ubuntu
+$ docker run -d jenkins
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Step 3 - Monitor through Datadog dashboard
+=====================================================================
