@@ -85,24 +85,66 @@ Step 3 - Validate using Putty
 FILL THIS FORM
 https://docs.google.com/forms/d/e/1FAIpQLSfPGfd402h54Sf2yQJCcP2IiQybKophINpAC9iD9pqbaXqerQ/viewform
 
-===================================================
+====================LINUX==============================
+rahul sinha			13.127.228.32
+Abhijit kumar Ghosh		65.0.32.116
+Bhargavi Bhat			13.233.118.21
+Lavanya Sakthivel		52.66.246.181	
+Libin				13.232.109.174
+Ramakrishna Madugula		15.207.88.128
+Surya				13.126.165.180
+Libin				13.233.133.140
+Abinaya G			15.207.110.193
+Neha Candida D			13.232.10.39
+Deepti 				13.233.102.44
+Anshuman Mohapatra		13.126.202.16
+Charles Kiran Kumar Victor	13.233.136.87	
+Meghana Anand			15.207.254.50	
+Chaitra Murthy			15.206.189.103
+Poojitha Gali			15.206.187.98
+Koushik Nandan			15.207.98.90
+Sathish Balakrishna		15.207.116.172
+John Christopher		13.127.63.101
+Vishal Eswar			35.154.65.17
 
-13.127.228.32
-65.0.32.116
-13.233.118.21
-52.66.246.181
-13.232.109.174
-15.207.88.128
-13.126.165.180
-13.233.133.140
-15.207.110.193
-13.232.10.39
-13.233.102.44
-13.126.202.16
-13.233.136.87
-15.207.254.50
-15.206.189.103
-15.206.187.98
-15.207.98.90
+
+How to change a key in linux?
+
+Hint: Some lines were ellipsized, use -l to show in full.
+[centos@ip-172-31-13-104 ~]$ history
+    1  sudo vi /etc/datadog-agent/datadog.yaml
+    2  more /etc/datadog-agent/datadog.yaml
+    3  sudo more /etc/datadog-agent/datadog.yaml
+    4  sudo systemctl status datadog-agent
+    5  sudo systemctl stop datadog-agent
+    6  sudo systemctl status datadog-agent
+    7  sudo systemctl start datadog-agent
+    8  sudo systemctl status datadog-agent
+    9  history
+
+
+
+====================WINDOWS==============================
+rahul sinha			65.0.199.182		bd2zlu?K7aX(mMcOasCnSMwLyvaN6m*7
+Abhijit kumar Ghosh		15.207.247.46		mV67uhpGSnc6dcMKbus%C5Q&fk@S5bKG
+Bhargavi Bhat			65.0.179.44		UI(V7qKb;)N4Cb@iupnV8)Vn(&i2om!R
+Lavanya Sakthivel		65.0.20.93		wWQ2m%whAmmbnvYdpkfa&5M73GQZ-7HB	
+Libin				13.233.104.128		D78IKoNoeRauzlvblNk.Ax@JeK2lYO85
+Ramakrishna Madugula		65.0.173.73		GUAvMPkd9AA(.6B;zgmVJsA4JUUVxHt!
+Surya				65.0.106.162		Nzg-ktpJ)RQG?mqi2ahLMguLIPBthiyE
+Libin				35.154.222.244		HJjuPb=O)A&kS-smjz!gsSiW3gevxu$5
+Abinaya G			13.127.6.1		mV67uhpGSnc6dcMKbus%C5Q&fk@S5bKG
+Neha Candida D			13.233.193.193		JMjie.uNDhhKlVPff4%v8SG!xgI6P9LV
+Deepti 				13.126.72.106		uERvTDbv7=nH5f3AsFz!EH$wB?EEloAG
+Anshuman Mohapatra		35.154.52.226		mV67uhpGSnc6dcMKbus%C5Q&fk@S5bKG
+Charles Kiran Kumar Victor	15.206.89.232		BbUYmF4ARc2Ov2ITea7J?E&onO72Ook8	
+Meghana Anand			15.207.110.34		crFcn.6H?6O77qxWkFTlp3XB9N;v7Day	
+Chaitra Murthy			15.207.21.123		$wpeHsKd=nGxZwR?X9f3wQ;8KN!L)vnW
+Poojitha Gali			52.66.63.90		ycZbm5fpBzy%p5!hrR97E?FK5K!LTTTI
+Koushik Nandan			13.235.68.82		lTkiI.Q$)nhEyz-o%5%?@(hCV!8Lf9ii
+Sathish Balakrishna		15.207.116.172
+John Christopher		13.127.63.101
+Vishal Eswar			35.154.65.17
 
 Step 3 - Monitor through Datadog dashboard.
+
