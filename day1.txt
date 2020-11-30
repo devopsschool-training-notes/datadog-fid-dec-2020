@@ -1,0 +1,108 @@
+Rajesh Kumar
+=================
+Demo - AWS
+Lab + Demo -> ONE HOST(Given SP team) ---> AWS + Datadog
+Start time - 9:00 AM IST
+End time - 5.30 PM IST
+-----------------
+Lunch - 1:00 PM - 2:00 PM 
+2 BREAK - 15 mins 
+	   11.30 AM
+	   3.30 PM
+=====================
+Time - 3:00 - 4:30 PM
+=================================
+8105843520
+=================================
+
+Step 1 - Register at Datadog website
+
+Step 2 - Install Agent in Linux Box (AWS)
+13.233.194.184
+centos 
+PUTTY - PPK
+SSH - PEM
+
+DD_AGENT_MAJOR_VERSION=7 DD_API_KEY=c56b6585cafb2349950cf846e7bd9e82 DD_SITE="datadoghq.com" bash -c "$(curl -L https://s3.amazonaws.com/dd-agent/scripts/install_script.sh)"
+
+Your Agent is running and functioning properly. It will continue to run in the
+background and submit metrics to Datadog.
+
+If you ever want to stop the Agent, run:
+
+    sudo systemctl stop datadog-agent
+
+And to run it again run:
+
+    sudo systemctl start datadog-agent
+
+	sudo systemctl status datadog-agent
+
+  1  DD_AGENT_MAJOR_VERSION=7 DD_API_KEY=c56b6585cafb2349950cf846e7bd9e82 DD_SITE="datadoghq.com" bash -c "$(curl -L https://s3.amazonaws.com/dd-agent/scripts/install_script.sh)"
+    2  clear
+    3  sudo systemctl status datadog-agent
+    4  ps -eaf | grep datadog-agent
+    5  more /etc/passwd | grep dd
+    6  which datadog-agent
+    7  clear
+    8  datadog-agent help
+    9  datadog-agent check help
+   10  clear
+   11  datadog-agent check help
+   12  sudo datadog-agent check help
+   13  sudo datadog-agent c
+   14  sudo datadog-agent
+   15  clear
+   16  ps -eaf | grep data
+   17  more /etc/datadog-agent/datadog.yaml
+   18  sudo /etc/datadog-agent/datadog.yaml
+   19  sudo more /etc/datadog-agent/datadog.yaml
+   20  clear
+   21  ks
+   22  ls
+
+Windows 2016 - Server
+
+65.0.178.175
+ec2-65-0-178-175.ap-south-1.compute.amazonaws.com
+
+Administrator
+vuQOFBFN7kRWFE;iz6eXAIdFDa4lJ8Z;
+
+===================================================
+Step 1 - Install PUTTY
+Ref - https://www.devopsschool.com/blog/how-to-login-linux-server-of-aws-from-windows-using-putty/
+
+Step 2 - Get Cred file
+IP - 13.233.194.184
+centos
+PPK - https://www.devopsschool.com/notes/docker/2019/
+FILE for Putty 	- 	rajesh-mumbai.ppk
+FILE for SSH 	- 	rajesh-mumbai.pem
+
+Step 3 - Validate using Putty
+
+FILL THIS FORM
+https://docs.google.com/forms/d/e/1FAIpQLSfPGfd402h54Sf2yQJCcP2IiQybKophINpAC9iD9pqbaXqerQ/viewform
+
+===================================================
+
+13.127.228.32
+65.0.32.116
+13.233.118.21
+52.66.246.181
+13.232.109.174
+15.207.88.128
+13.126.165.180
+13.233.133.140
+15.207.110.193
+13.232.10.39
+13.233.102.44
+13.126.202.16
+13.233.136.87
+15.207.254.50
+15.206.189.103
+15.206.187.98
+15.207.98.90
+
+Step 3 - Monitor through Datadog dashboard.
