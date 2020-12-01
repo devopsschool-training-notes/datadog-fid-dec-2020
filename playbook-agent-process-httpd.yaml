@@ -1,0 +1,30 @@
+---
+- name: newrelic agent setup  
+  hosts: all
+ 
+  tasks:
+    - script: ddagent-install.sh
+    - name: Copy file with owner and permissions
+      copy:
+        src: datadog.yaml
+        dest: /etc/datadog-agent/datadog.yaml
+        owner: dd-agent
+        group: dd-agent
+        mode: '0644'
+    - name: Install HTTPD server
+      command: yum install httpd -y
+    - name: Copy httpd.conf file in All Machine
+      copy:
+        src: httpd.conf
+        dest: /etc/httpd/conf/httpd.conf
+    - name: Restart DD agent
+      command: systemctl restart httpd
+    - name: Copy file with owner and permissions
+      copy:
+        src: apache-conf.yaml
+        dest: /etc/datadog-agent/conf.d/apache.d/conf.yaml
+        owner: dd-agent
+        group: dd-agent
+        mode: '0644'
+    - name: Restart DD agent
+      command: systemctl restart datadog-agent

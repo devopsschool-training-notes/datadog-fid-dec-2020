@@ -1,0 +1,10 @@
+---
+- name: newrelic agent setup  
+  hosts: all
+ 
+  tasks:
+    - script: ddagent-install.sh
+    - name: Setup a apps
+      command: systemctl stop datadog-agent
+    - name: Setup a apps
+      command: systemctl start datadog-agent

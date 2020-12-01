@@ -1,0 +1,15 @@
+---
+- name: newrelic agent setup  
+  hosts: all
+ 
+  tasks:
+    - script: ddagent-install.sh
+    - name: Copy file with owner and permissions
+      copy:
+        src: datadog.yaml
+        dest: /etc/datadog-agent/datadog.yaml
+        owner: dd-agent
+        group: dd-agent
+        mode: '0644'
+    - name: Setup a apps
+      command: systemctl restart datadog-agent
